@@ -2,7 +2,7 @@ import re
 
 total = 0
 
-for line in open("day4input.txt"):
+for line in open("res/day4input.txt"):
     data = re.search(r":(.*)\|(.*)", line)
 
     winning = set(data.group(1).split())

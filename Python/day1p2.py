@@ -19,10 +19,10 @@ last_exp = "|".join([k[::-1] for k in numbers.keys()] + list(numbers.values()))
 
 result = 0
 
-with open("day1input.txt") as file:
+with open("res/day1input.txt") as file:
     for line in file:
-        # last = re.search(last_exp, line[::-1])
-        results = re.f(first_exp, line, overlapped=True)
+        last = re.search(last_exp, line[::-1])
+        first = re.search(first_exp, line)
 
         result += str_to_num(first.group()) * 10 + str_to_num(last.group()[::-1])
 

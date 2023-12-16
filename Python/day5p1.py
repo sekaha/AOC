@@ -1,7 +1,7 @@
 # so find which range a thing belongs to.....
 # then convert it, based on the offset
 # if there is no range it belongs to, then the source and destination are the same number
-seeds, *mappings = open("day5small.txt").read().split("\n\n")
+seeds, *mappings = open("res/day5input.txt").read().split("\n\n")
 seeds = list(map(int, seeds.split()[1:]))
 
 for mapping in mappings:

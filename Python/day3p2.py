@@ -1,4 +1,4 @@
-neighborhood = [list(line.strip()) for line in open("day3input.txt")]
+neighborhood = [list(line.strip()) for line in open("res/day3input.txt")]
 
 
 def get_num(x, y):

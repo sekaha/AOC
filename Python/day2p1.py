@@ -3,7 +3,7 @@ import re
 total = 0
 allowances = {"red": 12, "green": 13, "blue": 14}
 
-with open("day2input.txt") as file:
+with open("res/day2input.txt") as file:
     for line in file:
         header, data = line.strip().split(":")
         game_id = int(re.search(r"[0-9]+", header).group())

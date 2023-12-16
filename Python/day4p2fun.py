@@ -1,4 +1,4 @@
-data = list(open("day4input.txt"))
+data = list(open("res/day4input.txt"))
 cards = [1] * len(data)
 
 for i, line in enumerate(data):

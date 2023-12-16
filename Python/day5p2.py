@@ -3,7 +3,7 @@ from time import time
 s = time()
 
 # Import seed and mappings, but conver the seeds to [a,b) intervals
-seeds, *mappings = open("day5input.txt").read()[:-1].split("\n\n")
+seeds, *mappings = open("res/day5input.txt").read()[:-1].split("\n\n")
 seeds = [(int(s), int(sz)) for s, sz in zip(seeds.split()[1::2], seeds.split()[2::2])]
 seeds = sorted([(s, s + sz) for s, sz in seeds])
 

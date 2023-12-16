@@ -2,7 +2,7 @@ from functools import reduce
 
 total = 0
 
-with open("day2input.txt") as file:
+with open("res/day2input.txt") as file:
     for game in file:
         header, data = game.strip().split(":")
         rounds = data.split(";")

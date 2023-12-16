@@ -1,6 +1,6 @@
 import re
 
-with open("day1input.txt") as lines:
+with open("res/day1input.txt") as lines:
     result = sum(
         int(digits[0]) * 10 + int(digits[-1])
         for line in lines
